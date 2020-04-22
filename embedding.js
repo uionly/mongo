@@ -38,7 +38,7 @@ async function listCourses() {
 
 async function updateAuthor(courseId) {
     // const course = await Course.findById(courseId);
-    // course.author.name = 'Mosh Hamedani';
+    // course.author.name = 'Deepak Kumar';
     // course.save();
     // const course = await Course.update({ _id: courseId }, {
     //     $set: {
@@ -69,9 +69,9 @@ async function removeAuthor(courseId, authorId) {
     
 removeAuthor('5c900614d0dfe426a0435d04','5c900614d0dfe426a0435d03' );
 
-//   createCourse('Node Course', new Author({ name: 'Mosh' }));
+//   createCourse('Node Course', new Author({ name: 'Deepak' }));
 // createCourse('Node Course', [
-//     new Author({ name: 'Mosh' }),
+//     new Author({ name: 'Deepak' }),
 //     new Author({ name: 'Joun' })
 // ]);
 // updateAuthor('5c8fb992093d070ad8eaf401');

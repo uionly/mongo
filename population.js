@@ -54,7 +54,7 @@ async function listCourses() {
   console.log(courses);
 }
 
-// createAuthor("Mosh", "My bio", "My Website");
+// createAuthor("Deepak", "My bio", "My Website");
 
 // createCourse('Node Course', '5c8fb1c50c72fa18dc7168b7')
 

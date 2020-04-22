@@ -53,7 +53,7 @@ async function createCourse() {
     const course = new Course({
         name: 'Angular Course 2',
         category: 'WEB',
-        author: 'Mosh',
+        author: 'Deepak',
         tags: ['frontend'],
         isPublished: true,
         price: 15.8
@@ -87,11 +87,11 @@ async function getCourses() {
     // in
     // nin
     const courses = await Course
-        .find({ author: 'Mosh', isPublished: true } )
-        // .find({ author: /^Mosh/i } )
+        .find({ author: 'Deepak', isPublished: true } )
+        // .find({ author: /^Deepak/i } )
         // .find()
-        // .or([ {author: 'Mosh'}, {isPublished: true}])
-        // .and([ {author: 'Mosh'}, {isPublished: true}])
+        // .or([ {author: 'Deepak'}, {isPublished: true}])
+        // .and([ {author: 'Deepak'}, {isPublished: true}])
         // .find({ price: { $gt: 10, $lte: 20 } } )
         // .find({ price: { $in: [10, 15, 20] } } )
         .limit(10)
