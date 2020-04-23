@@ -9,7 +9,8 @@ const courseSchema = new mongoose.Schema({
     author: String,
     tags: [ String ],
     date: { type: Date, default: Date.now },
-    isPublished: Boolean
+    isPublished: Boolean,
+    price: Number
 });
 
 const Course = mongoose.model('Course', courseSchema);
@@ -25,12 +26,12 @@ async function getCourses() {
     // nin
     const courses = await Course
         //    .find();
-        .find({ author: 'Deepak', isPublished: true } )
+        // .find({ author: 'Deepak', isPublished: true } )
         // .find({ author: /^Deepak/i } )
         // .find()
         // .or([ {author: 'Deepak'}, {isPublished: true}])
         // .and([ {author: 'Deepak'}, {isPublished: true}])
-        // .find({ price: { $gt: 10, $lte: 20 } } )
+        .find({ price: { $gt: 10, $lte: 20 } } )
         // .find({ price: { $in: [10, 15, 20] } } )
         // .limit(10)
         // .sort({ name: 1 })

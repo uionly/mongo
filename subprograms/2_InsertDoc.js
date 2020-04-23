@@ -12,14 +12,17 @@ const courseSchema = new mongoose.Schema({
     isPublished: Boolean
 });
 
+// define a course object instance
+
+
 const Course = mongoose.model('Course', courseSchema);
 
 async function createCourse() {
     const course = new Course({
-        name: 'Node Course',
-        author: 'Deepak',
-        tags: ['angular', 'frontend'],
-        isPublished: true
+        name: 'Express Tutorials',
+        author: 'Kumar',
+        tags: ['express', 'server'],
+        isPublished: false
     });
     
     const result = await course.save();
